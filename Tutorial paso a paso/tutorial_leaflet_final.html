@@ -1,0 +1,49 @@
+<html>
+        <head>
+            <title>Mi primer mapa en Leaflet</title>
+            
+            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+            <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+            <script src="scripts/leaflet.label.js"></script>
+	       
+           <style>
+                #map { height: 100%; width: 100%; } 
+           </style>
+        </head>
+
+        <body>
+
+            <div id="map"></div>
+
+            <script>
+                //mapa base
+                var map = L.map('map').setView([40.111054, -3.679537], 6 );
+
+                var OpenStreetMap_BlackAndWhite = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+                    minZoom: 6,
+                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                    }).addTo(map);
+
+                //marcador
+                var marker = L.marker([41.435620, 2.236003]).addTo(map);
+                    marker.bindPopup("&Eacute;ste es mi primer <a href=http://leafletjs.com/reference.html#marker target=_blank>marcador</a><br><br><iframe width=300 height=150 src=https://www.youtube.com/embed/W4p3M4Vuy_E frameborder=0 allowfullscreen> </iframe><br><br> Don't stop me know").openPopup();
+
+                //popup
+                var popup = L.popup()
+                    .setLatLng([41.635696, -5.734516])
+                    .setContent("&Eacute;ste es mi primer popup")
+                    .openOn(map);
+
+                //línea
+                var polyline = L.polyline([[43.260568, -2.935282], [43.294170, -1.968390], [42.813582, -2.700043], [42.813582, -2.700043], [42.453915, -2.440312]], {color: 'black'}).addTo(map)
+
+                //función para que leaflet devuelda latitud y longitud al hacer click
+                //function onMapClick(e) {
+                //alert("You clicked the map at " + e.latlng);
+                //}
+                //map.on('click', onMapClick);
+
+            </script>
+        </body>
+    
+</html>      
