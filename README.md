@@ -39,9 +39,3 @@ Archivo: [tutorial_leaflet_final.html] (https://github.com/adrianblanco/leafletj
 
 ###Quiero saber más
 El mejor recurso para ampliar información es la *documentación* que puede encontrarse en la web de [Leaflet JS](http://leafletjs.com/reference.html). Además, también hay unos [tutoriales](http://leafletjs.com/examples.html) muy sencillos para aprender de forma práctica
-
-###Paso 7: Mi primer popup
-Archivo: tutorial_leaflet_7.html
-
-###Paso 8: Mi primer Polyline
-Archivo: tutorial_leaflet_final.html
