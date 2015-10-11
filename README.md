@@ -9,16 +9,16 @@ Para empezar tenemos que crear el esqueleto HTML en el que introduciremos más t
 ATENCIÓN: Aunque en este ejemplo vamos a guardar el código en un mismo fichero html para facilitar la comprensión del ejercicio, lo ideal sería escribir el código html, css y javascript en ficheros separados.
 Archivo: [tutorial_leaflet_1.html] (https://github.com/adrianblanco/leafletjs-tutorial/blob/gh-pages/Tutorial%20paso%20a%20paso/tutorial_leaflet_1.html)
 
-###Paso 2: Crear el <div></div>
+###Paso 2: Crear el div
 Creamos el div, la "caja" donde irá el mapa.
 Archivo: [tutorial_leaflet_2.html] (https://github.com/adrianblanco/leafletjs-tutorial/blob/gh-pages/Tutorial%20paso%20a%20paso/tutorial_leaflet_2.html)
 
 ###Paso 3: Script sources
-Enlazamos dentro de la <head> a los ficheros de código fuente que nos permitirán trabajar con Leaflet.
+Enlazamos, dentro de head, los ficheros de código fuente que nos permitirán trabajar con Leaflet.
 Archivo: [tutorial_leaflet_3.html] (https://github.com/adrianblanco/leafletjs-tutorial/blob/gh-pages/Tutorial%20paso%20a%20paso/tutorial_leaflet_3.html)
 
 ###Paso 4: CSS
-Dentro de la etiqueta <style></style> introducimos el código CSS.
+Dentro de la etiqueta "style" introducimos el código CSS.
 Archivo: [tutorial_leaflet_4.html] (https://github.com/adrianblanco/leafletjs-tutorial/blob/gh-pages/Tutorial%20paso%20a%20paso/tutorial_leaflet_4.html)
 
 ###Paso 5: Dibujar mapa base
